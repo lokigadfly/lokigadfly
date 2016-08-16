@@ -2,13 +2,15 @@ from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, FormView
-from blog.models import Article, Category, Tag
+from blog.models import Article, Category, Tag,Link
 import markdown2
 from .models import BlogComment
 from .forms import BlogCommentForm
 
 
 # Create your views here.
+
+
 class IndexView(ListView):
     template_name = "blog/index.html"
     context_object_name = "article_list"
@@ -57,6 +59,17 @@ class CategoryView(ListView):
     def get_context_data(self, **kwargs):
         kwargs['category_list'] = Category.objects.all().order_by('name')
         return super(CategoryView, self).get_context_data(**kwargs)
+
+class LinkView(ListView):
+    template_name = "blog/link.html"
+    contect_name = "link_list"
+    def get_queryset(self):
+        pass
+    def get_context_data(self, **kwargs):
+        kwargs['link_list'] = Link.objects.all().order_by('name')
+        return super(LinkView, self).get_context_data(**kwargs)
+
+
 
 
 class TagView(ListView):

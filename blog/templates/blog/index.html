@@ -30,13 +30,13 @@
                                 </div>
                                 <div class="post-bd">
                                     <!-- 	<p><a href=""><img src="" alt=""></a></p> -->
-                                    <p>{{ article.abstract }}</p>
+                                    <p> {{ article.abstract |safe }}</p>
                                     <p><a href="" class="more-link"></a></p>
                                 </div>
                                 <div class="post-ft">
                                     <a href="{% url 'blog:detail' article.id %}" class="more">阅读全文>></a>
                                     <i class="icon-date"></i>
-                                    <span class="date">{{ article.last_modified_time|date:"Y年n月d日" }}</span>
+                                    <span class="date">loki发布于{{ article.last_modified_time|date:"Y年n月d日" }} ===》<a href= "{% url 'blog:category' article.category.pk %}">{{article.category}}</a></span>
                                 </div>
                             </div>
                         {% endfor %}
