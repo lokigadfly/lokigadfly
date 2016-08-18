@@ -75,7 +75,7 @@ class ProductView(ListView):
     def get_queryset(self):
         pass
     def get_context_data(self, **kwargs):
-        kwargs['products_list'] = Products.objects.all().order_by('name')
+        kwargs['products_list'] = Product.objects.all().order_by('name')
         return super(ProductView, self).get_context_data(**kwargs)
 
 
