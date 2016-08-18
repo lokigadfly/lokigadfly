@@ -64,7 +64,7 @@ class Link(models.Model):
     )
     name = models.CharField('link名字', max_length=20)
     href_name =models.CharField('链接',max_length=100)
-    kinds = models.CharField('类型', max_length=1, choices=LINK_CHOICES)
+    kinds = models.CharField('类型', max_length=1, choices=LINK_CHOICES,default="o")
     def __str__(self):
         return self.name
 
