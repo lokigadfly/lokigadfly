@@ -57,11 +57,26 @@ class Category(models.Model):
 
 
 class Link(models.Model):
+    LINK_CHOICES = (
+        ('f', 'Friends'),
+        ('w', 'website'),
+        ('o', 'others'),
+    )
     name = models.CharField('link名字', max_length=20)
     href_name =models.CharField('链接',max_length=100)
 
     def __str__(self):
         return self.name
+        
+class Product(models.Model):
+    img_href= models.CharField('链接',max_length=100)
+    name = models.CharField('link名字', max_length=20)
+    href_name =models.CharField('链接',max_length=100)
+    intro = models.TextField('简介')
+
+    def __str__(self):
+        return self.name
+
 
 
 class Tag(models.Model):

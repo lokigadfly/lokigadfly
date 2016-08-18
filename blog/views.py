@@ -69,7 +69,14 @@ class LinkView(ListView):
         kwargs['link_list'] = Link.objects.all().order_by('name')
         return super(LinkView, self).get_context_data(**kwargs)
 
-
+class ProductView(ListView):
+    template_name = "blog/products.html"
+    contect_name = "products_list"
+    def get_queryset(self):
+        pass
+    def get_context_data(self, **kwargs):
+        kwargs['products_list'] = Products.objects.all().order_by('name')
+        return super(ProductView, self).get_context_data(**kwargs)
 
 
 class TagView(ListView):
