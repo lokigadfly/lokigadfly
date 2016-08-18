@@ -75,12 +75,19 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql', #设置为mysql数据库
+        'NAME': 'lokigadfly',  #mysql数据库名
+        'USER': 'blog',  #mysql用户名，留空则默认为当前linux用户名
+        'PASSWORD': 'loki123123',   #mysql密码
+        'HOST': '107.170.249.173',  #留空默认为localhost
+        'PORT': '',  #留空默认为3306端口
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
