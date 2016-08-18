@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, FormView
-from blog.models import Article, Category, Tag,Link
+from blog.models import Article, Category, Tag,Link,Product
 import markdown2
 from .models import BlogComment
 from .forms import BlogCommentForm
