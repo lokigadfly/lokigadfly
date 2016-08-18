@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'lokigadfly',  #mysql数据库名
         'USER': 'blog',  #mysql用户名，留空则默认为当前linux用户名
         'PASSWORD': 'loki123123',   #mysql密码
-        'HOST': '',  #留空默认为localhost
+        'HOST': '107.170.249.173',  #留空默认为localhost
         'PORT': '',  #留空默认为3306端口
     }
 }
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'zh-cn'
+LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
 
