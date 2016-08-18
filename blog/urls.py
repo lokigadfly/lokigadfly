@@ -5,6 +5,7 @@ urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^link$', views.LinkView.as_view(), name='link'),
     url(r'^products$', views.ProductView.as_view(), name='products'),
+    url(r'^board$', views.BoardView.as_view(), name='board'),
     url(r'^article/(?P<article_id>\d+)$', views.ArticleDetailView.as_view(), name='detail'),
     url(r'^category/(?P<cate_id>\d+)$', views.CategoryView.as_view(), name='category'),
     url(r'^tag/(?P<tag_id>\d+)$', views.TagView.as_view(), name='tag'),

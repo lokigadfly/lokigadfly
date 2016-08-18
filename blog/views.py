@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, FormView
-from blog.models import Article, Category, Tag,Link,Product
+from blog.models import Article, Category, Tag,Link,Product,Board
 import markdown2
 from .models import BlogComment
 from .forms import BlogCommentForm
@@ -77,6 +77,15 @@ class ProductView(ListView):
     def get_context_data(self, **kwargs):
         kwargs['products_list'] = Product.objects.all().order_by('name')
         return super(ProductView, self).get_context_data(**kwargs)
+class BoardView(ListView):
+    template_name = "blog/board.html"
+    contect_name = "board_list"
+    def get_queryset(self):
+        pass
+    def get_context_data(self, **kwargs):
+        kwargs['board_list'] = Board.objects.all().order_by('name')
+        return super(BoardView, self).get_context_data(**kwargs)
+
 
 
 class TagView(ListView):

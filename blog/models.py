@@ -64,19 +64,25 @@ class Link(models.Model):
     )
     name = models.CharField('link名字', max_length=20)
     href_name =models.CharField('链接',max_length=100)
-
+    kinds = models.CharField('类型', max_length=1, choices=LINK_CHOICES)
     def __str__(self):
         return self.name
-        
+
 class Product(models.Model):
-    img_href= models.CharField('链接',max_length=100)
-    name = models.CharField('link名字', max_length=20)
-    href_name =models.CharField('链接',max_length=100)
+    name = models.CharField('Product名字', max_length=20)
+    href_name =models.CharField('链接',blank=True, null=True,max_length=100)
     intro = models.TextField('简介')
-
+    img_href= models.CharField('图片地址',blank=True, null=True,max_length=100)
+    created_time = models.DateTimeField('创建时间', auto_now_add=True)
     def __str__(self):
         return self.name
-
+class Board(models.Model):
+   
+    name = models.CharField('name', max_length=20)
+    href_name =models.CharField('链接',blank=True, null=True,max_length=100)
+    img_href= models.CharField('图片地址',blank=True, null=True,max_length=100)
+    def __str__(self):
+        return self.name
 
 
 class Tag(models.Model):
