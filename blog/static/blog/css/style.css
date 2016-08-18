@@ -53,8 +53,9 @@ embed {
 }
 
 .rongqi1{
-    height:80%;
+    height:100%;
     width: 700px;
+
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -79,11 +80,11 @@ embed {
     width: 100%;
     background: #fefefe;
     margin-top: 0px;
-    border-bottom: 1px solid #bcb7b5;
+    /*border-bottom: 1px solid #bcb7b5;*/
 }
 
 #header #header-warp {
-    width: 961px;
+    width: 700px;
     height: 72px;
     margin: 0 auto;
 }

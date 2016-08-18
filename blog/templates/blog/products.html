@@ -2,11 +2,11 @@
 {% block content %}
 <div class="rongqi1">
 	<div class="center">
-		{% for product in products_list %}
+		
 		<ul>
 			<div class="row">
-				
-				<div class="col-md-8">
+				{% for product in products_list %}
+				<div class="col-md-6">
 					<h3>
 						<li>
 							<a href="{{product.href_name}}" target="_blank">{{product.name}}</a>
@@ -15,9 +15,10 @@
 					<img src="{{product.img_href}}">
 					<p>{{product.intro}}</p>
 				</div>
+				{% endfor %}
 			</div>
 		</ul>
-		{% endfor %}
+		
 	</div>
 </div>
 {% endblock %}

@@ -4,34 +4,36 @@
 	<div class="center">
 
 		<ul>
-			<h1>Niggaz：</h1>
+			<h1 class="post-hd">Niggaz</h1>
 			{% for link in link_list %}
 {% if link.kinds == 'f' %}
 			<div class="row">
-				
+				<div class="col-md-1"></div>
 				<div class="col-md-8">
-					<h3>
+					
+					<div class="post-bd">
 						<li>
 							<a href="{{link.href_name}}" target="_blank">{{link.name}}</a>
 						</li>
-					</h3>
+					</div>
+					
 				</div>
 			</div>
 			{% endif %}
  {% endfor %}
 		</ul>
 		<ul>
-			<h1>Sites：</h1>
+			<h1>Sites</h1>
 			{% for link in link_list %}
 {% if link.kinds == 'w' %}
 			<div class="row">
-				
+				<div class="col-md-1"></div>
 				<div class="col-md-8">
-					<h3>
+					<div class="post-bd">
 						<li>
 							<a href="{{link.href_name}}" target="_blank">{{link.name}}</a>
 						</li>
-					</h3>
+					</div>
 				</div>
 			</div>
 			{% endif %}
@@ -39,17 +41,17 @@
 		</ul>
 
 		<ul>
-			<h1>Others：</h1>
+			<h1>Others</h1>
 			{% for link in link_list %}
 {% if link.kinds == 'o' %}
 			<div class="row">
-				
+				<div class="col-md-1"></div>
 				<div class="col-md-8">
-					<h3>
+					<div class="post-bd">
 						<li>
 							<a href="{{link.href_name}}" target="_blank">{{link.name}}</a>
 						</li>
-					</h3>
+					</div>
 				</div>
 			</div>
 			{% endif %}
