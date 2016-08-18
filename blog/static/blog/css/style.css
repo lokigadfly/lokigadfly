@@ -5,6 +5,7 @@ html, body {
     font-size: 100%;
     vertical-align: baseline;
     line-height: 1;
+    height:100%;
 }
 
 body {
@@ -19,12 +20,7 @@ body.mac {
     font-family: Helvetica Neue, Hiragino Sans GB, Microsoft Yahei, WenQuanYi Micro Hei, sans-serif;
 }
 
-.center {
-    padding: 1em;
-    margin-bottom: 1.2em;
-    border: 1px solid #CCCCCC;
-    background-color: rgb(255, 255, 255);
-}
+
 
 ul {
     padding: 0;
@@ -56,6 +52,14 @@ embed {
     display: block;
 }
 
+.rongqi1{
+    height:80%;
+    width: 700px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;

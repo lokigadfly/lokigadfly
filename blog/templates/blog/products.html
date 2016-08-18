@@ -1,25 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-
-
-
-
-<div class="center">
-
-<ul>
-{% for product in products_list %}
-<div class="row">
-<div class="col-md-2"></div>
-<div class="col-md-8">
-<h3>
-	<li><a href="{{product.href_name}}" target="_blank">{{product.name}}</a></li></h3>
-	<img src="{{product.img_href}}">
-	<p>{{product.intro}}</p>
+<div class="rongqi1">
+	<div class="center">
+		{% for product in products_list %}
+		<ul>
+			<div class="row">
+				
+				<div class="col-md-8">
+					<h3>
+						<li>
+							<a href="{{product.href_name}}" target="_blank">{{product.name}}</a>
+						</li>
+					</h3>
+					<img src="{{product.img_href}}">
+					<p>{{product.intro}}</p>
+				</div>
+			</div>
+		</ul>
+		{% endfor %}
 	</div>
-	</div>
- {% endfor %}
-</ul>
-
-	</div>                            
-                           
+</div>
 {% endblock %}
