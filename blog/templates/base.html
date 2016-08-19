@@ -10,6 +10,29 @@
     <link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}">
 </head>
 <body>
+
+<nav class="navbar navbar-default visible-xs" role="navigation">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#example-navbar-collapse">
+         <span class="sr-only">切换导航</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{% url 'blog:index' %}">Lokigadfly</a>
+   </div>
+   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+         <li><a href="{% url 'blog:index' %}">Index</a></li>
+         <li><a href="{% url 'blog:link' %}">Links</a></li>
+         <li><a href="{% url 'blog:products' %}">Products</a></li>
+         <li><a href="{% url 'blog:board' %}"">Board</a></li>
+      </ul>
+   </div>
+</nav>
+
+<div class="hidden-xs">
 <div id="header">
     <div id="header-warp">
         <a href="{% url 'blog:index' %}" title="Lokigadfly -- 我的博客" id="logo"></a>
@@ -21,6 +44,7 @@
         </ul>
     </div>
 </div>
+    </div>
     <div class="visible-md visible-lg">
         <div id="banner" class="noselect"></div></div>
 {% block content %}{% endblock %}

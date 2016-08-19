@@ -13,7 +13,7 @@ body {
     padding: 0;
     font: 12px 'Microsoft Yahei', '微软雅黑', 'simsun', Arial, sans-serif;
     background-color: #edf4f6;
-    min-width: 960px;
+    
 }
 
 body.mac {
@@ -54,7 +54,7 @@ embed {
 
 .rongqi1{
     height:100%;
-    width: 700px;
+    /*width: 500px;*/
 
     padding-right: 15px;
     padding-left: 15px;
