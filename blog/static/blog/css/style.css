@@ -530,7 +530,8 @@ embed {
 
 #bd {
     margin: 0 auto;
-    width: 80%;
+    max-width: 900px;
+    width: 100%;
     height: auto;
 }
 
@@ -870,7 +871,7 @@ a.backToTop:hover {
 
 #detail-title {
     display: block;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 35px;
     background-color: #fff;
@@ -912,9 +913,13 @@ a.backToTop:hover {
     max-width: 500px;
 }
 
+
+
+
 #category {
     display: block;
-    width: 80%;
+    width: 100%;
+    max-width:900px; 
     margin: 0 auto;
     height: 58px;
     margin-top: 35px;
@@ -1273,13 +1278,20 @@ img.aligncenter, img.alignright, img.alignleft {
 
 #pagenavi .next-page {
     position: absolute;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
     right: 0px;
     padding: 0px;
     width: 88px;
     margin: 0px;
     text-align: center;
 }
-
+#pagenavi .next-page:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
 #pagenavi .first-page {
     margin-left: 250px;
 }
@@ -1293,6 +1305,9 @@ img.aligncenter, img.alignright, img.alignleft {
 
 #pagenavi .previous-page {
     position: absolute;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
     left: 0px;
     padding: 0px;
     width: 88px;
@@ -1300,6 +1315,11 @@ img.aligncenter, img.alignright, img.alignleft {
     text-align: center;
 }
 
+#pagenavi .previous-page:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
 #pagenavi .previous-page .icon-previous {
     position: absolute;
     left: 0px;
