@@ -54,7 +54,16 @@ embed {
 
 .rongqi1{
     height:100%;
-    /*width: 500px;*/
+    width: 80%;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.rongqi2{
+    height:100%;
+    width:80%;
 
     padding-right: 15px;
     padding-left: 15px;
@@ -356,7 +365,7 @@ embed {
 }
 
 .wrp {
-    width: 960px;
+    width: 80%;
     height: 72px;
     margin: 0 auto;
 }
@@ -521,7 +530,7 @@ embed {
 
 #bd {
     margin: 0 auto;
-    width: 800px;
+    width: 80%;
     height: auto;
 }
 
@@ -546,14 +555,14 @@ a.backToTop:hover {
 }
 
 #main {
-    float: left;
+    float: none;
     overflow-x: hidden;
     width: 100%
 }
 
 .post {
     margin-top: 38px;
-    border: 1px solid #e8eff1;
+    /*border: 1px solid #e8eff1;*/
     background-color: #fff;
     padding-left: 20px;
     padding-right: 20px;
@@ -561,13 +570,13 @@ a.backToTop:hover {
 
 .post-hd .title {
     margin: 27px 0 27px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    color: #555;
+    color: #000000;
 }
 
 .post-hd .title a {
-    color: #555;
+    color: #000000;
 }
 
 .post-hd .title a:hover {
@@ -624,11 +633,11 @@ a.backToTop:hover {
 .post-bd {
 / / min-height: 250 px;
     word-break: break-word;
-    color: #777;
+    color: #2c2e2f;
 }
 
 .post-bd p {
-    color: #777;
+    color: #2c2e2f;
     font-size: 20px;
 }
 
@@ -905,7 +914,7 @@ a.backToTop:hover {
 
 #category {
     display: block;
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
     height: 58px;
     margin-top: 35px;
@@ -1053,6 +1062,7 @@ img.aligncenter, img.alignright, img.alignleft {
 
 #footer {
     height: 50px;
+    width:100%;
     background-color: #515666;
     margin-bottom: 0;
     color: #a8abb3;
