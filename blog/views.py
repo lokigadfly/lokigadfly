@@ -40,7 +40,7 @@ class ArticleDetailView(DetailView):
         obj.body = markdown2.markdown(obj.body, extras=['fenced-code-blocks'], )
         return obj
 
-    # 第五周新增
+
     def get_context_data(self, **kwargs):
         kwargs['comment_list'] = self.object.blogcomment_set.all()
         kwargs['form'] = BlogCommentForm()
@@ -121,7 +121,7 @@ class ArchiveView(ListView):
         return super(ArchiveView, self).get_context_data(**kwargs)
 
 
-# 第五周新增
+
 class CommentPostView(FormView):
     form_class = BlogCommentForm
     template_name = 'blog/detail.html'
