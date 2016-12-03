@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'blog',
     'markdown2',
     'pygments',
@@ -83,7 +84,7 @@ DATABASES = {
         'NAME': 'lokigadfly',  #mysql数据库名
         'USER': 'blog',  #mysql用户名，留空则默认为当前linux用户名
         'PASSWORD': 'loki123123',   #mysql密码
-        'HOST': '107.170.249.173',  #留空默认为localhost
+        'HOST': '192.241.208.111',  #留空默认为localhost
         'PORT': '',  #留空默认为3306端口
     }
 }
