@@ -19,7 +19,7 @@ class IndexView(ListView):
         article_list = Article.objects.filter(status='p')
         for article in article_list:
             article.body = markdown2.markdown(article.body, extras=['fenced-code-blocks'], )
-            
+            article.abstract = markdown2.markdown(article.abstract, extras=['fenced-code-blocks'], )
         return article_list
 
     def get_context_data(self, **kwargs):
