@@ -19,7 +19,7 @@ class IndexView(ListView):
         article_list = Article.objects.filter(status='p')
         for article in article_list:
             article.body = markdown2.markdown(article.body, extras=['fenced-code-blocks'], )
-            article.abstract = markdown2.markdown(article.abstract, extras=['fenced-code-blocks'], )
+            
         return article_list
 
     def get_context_data(self, **kwargs):
@@ -38,7 +38,7 @@ class ArticleDetailView(DetailView):
     def get_object(self, queryset=None):
         obj = super(ArticleDetailView, self).get_object()
         obj.body = markdown2.markdown(obj.body, extras=['fenced-code-blocks'], )
-        obj.abstract = markdown2.markdown(ojb.abstract, extras=['fenced-code-blocks'], )
+
         return obj
 
 
@@ -56,6 +56,7 @@ class CategoryView(ListView):
         article_list = Article.objects.filter(category=self.kwargs['cate_id'], status='p')
         for article in article_list:
             article.body = markdown2.markdown(article.body, extras=['fenced-code-blocks'], )
+            article.abstract = markdown2.markdown(article.abstract, extras=['fenced-code-blocks'], )
         return article_list
 
     def get_context_data(self, **kwargs):
