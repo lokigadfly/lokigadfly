@@ -38,6 +38,7 @@ class ArticleDetailView(DetailView):
     def get_object(self, queryset=None):
         obj = super(ArticleDetailView, self).get_object()
         obj.body = markdown2.markdown(obj.body, extras=['fenced-code-blocks'], )
+        obj.abstract = markdown2.markdown(ojb.abstract, extras=['fenced-code-blocks'], )
         return obj
 
 
