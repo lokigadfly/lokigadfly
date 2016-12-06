@@ -36,7 +36,9 @@
 <div class="hidden-xs">
 <div id="header">
     <div id="header-warp">
-        <a href="{% url 'blog:index' %}" title="Lokigadfly --就是一个博客嘛！" id="logo"></a>
+        <a href="{% url 'blog:index' %}" title="Lokigadfly --就是一个博客嘛！" >
+          <img src="{% static 'blog/img/newlogo.png' %}"  width="158" height="47"  / id="logo">
+        </a>
         <ul id="header-nav">
             <li><a href="{% url 'blog:index' %}">主页</a></li>
             <li><a href="{% url 'blog:link' %}">链接</a></li>
