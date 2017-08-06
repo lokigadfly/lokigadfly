@@ -24,7 +24,7 @@ SECRET_KEY = '_lho^m33w-!qkhmqe2n2cwovcouiw(l++%&^(w5x@171pbm7_4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['45.55.15.16']
 
 # Application definition
 
@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'lokigadfly',  #mysql数据库名
         'USER': 'blog',  #mysql用户名，留空则默认为当前linux用户名
         'PASSWORD': 'loki123123',   #mysql密码
-        'HOST': '192.241.208.111',  #留空默认为localhost
+        'HOST': '45.55.15.16',  #留空默认为localhost
         'PORT': '',  #留空默认为3306端口
     }
 }
