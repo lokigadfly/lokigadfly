@@ -24,7 +24,7 @@ SECRET_KEY = '_lho^m33w-!qkhmqe2n2cwovcouiw(l++%&^(w5x@171pbm7_4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['45.55.15.16']
+ALLOWED_HOSTS = ['45.55.15.16','www.lokigadfly.com','blog.lokigadfly.com']
 
 # Application definition
 
