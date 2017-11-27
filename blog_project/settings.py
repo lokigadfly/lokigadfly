@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', #设置为mysql数据库
-        'NAME': 'lokigadfly',  #mysql数据库名
-        'USER': 'blog',  #mysql用户名，留空则默认为当前linux用户名
-        'PASSWORD': 'loki123123',   #mysql密码
-        'HOST': '45.55.15.16',  #留空默认为localhost
+        'NAME': '',  #mysql数据库名
+        'USER': '',  #mysql用户名，留空则默认为当前linux用户名
+        'PASSWORD': '',   #mysql密码
+        'HOST': '',  #留空默认为localhost
         'PORT': '',  #留空默认为3306端口
     }
 }
